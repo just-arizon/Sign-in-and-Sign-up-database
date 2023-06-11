@@ -1,2 +1,4 @@
 // import bootstrap
+$secondary:     #fff !default;
+$secondary-bg-subtle:     tint-color($secondary, 100%) !default;
 @import "../node_modules/bootstrap/scss/bootstrap";
