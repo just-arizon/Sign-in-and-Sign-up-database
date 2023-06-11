@@ -1,0 +1,14 @@
+{
+  "name": "sign-in-and-sign-up-database",
+  "version": "1.0.0",
+  "description": "A user's login and sign-up database repository is a common component in many web applications. It serves as a storage and management system for user authentication and registration information. The repository typically includes the necessary functionality to store, retrieve, update, and delete user data.\r # Plan \r The user is introduced to a form where he inputs in his credidentials like his full-name, E-mail, username, password and another input field to confirm his password one more time. \r A when his or she does all of these, he is sent to another page that tells him the sign-up/login was successfull.\r # PseudoCode\r This are steps required to return the desired output. Here is an algorithm in pseudocode for this problem:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  }
+}
