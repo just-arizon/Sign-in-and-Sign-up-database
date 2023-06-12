@@ -42,7 +42,9 @@ div.text{
 .bg-my-btn{
     background-color: var(--myprimary-color);
     border-radius: 30px;
-    
+}
+.bg-google-btn{
+    border-radius: 30px;
 }
 
 /* media queries */
