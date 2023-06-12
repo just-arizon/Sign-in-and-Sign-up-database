@@ -19,6 +19,10 @@ body{
 .navbar-toggler{
   border: none;
 }
+/* #navmenu{
+    display: flex;
+    justify-content: flex-end;
+} */
 .font-logo{
     font-weight: 700;
     font-size: 1.2rem;
@@ -43,6 +47,10 @@ div.text{
 
 /* media queries */
 @media (max-width: 480px){
+    .font-logo{
+        font-weight: 700;
+        font-size: 1.0rem;
+    }
     .font-heavy{
         font-size: 2.0rem;
     }
