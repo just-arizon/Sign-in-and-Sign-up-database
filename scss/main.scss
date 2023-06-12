@@ -1,4 +1,5 @@
 // import bootstrap
 $secondary:     #fff !default;
 $secondary-bg-subtle:     tint-color($secondary, 100%) !default;
+$navbar-light-icon-color:           rgb(255, 255, 255);
 @import "../node_modules/bootstrap/scss/bootstrap";
