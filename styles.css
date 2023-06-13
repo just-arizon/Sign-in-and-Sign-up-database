@@ -177,4 +177,9 @@ div.text{
     div.text{
         padding-right: .7rem;
     }
+    div.map-art{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
