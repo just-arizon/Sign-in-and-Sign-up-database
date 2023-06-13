@@ -33,6 +33,10 @@ body{
     font-weight: 700;
     font-size: 3rem;
 }
+.logo-container{
+    /* background-color: #030303; */
+    overflow: hidden;
+}
 div.text{
     padding-right: 3.5rem;
 }
