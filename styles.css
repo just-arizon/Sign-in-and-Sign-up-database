@@ -169,7 +169,7 @@ div.text{
 @media (max-width: 480px){
     .font-logo{
         font-weight: 700;
-        font-size: 1.0rem;
+        font-size: 1.125rem;
     }
     .font-heavy{
         font-size: 2.0rem;
