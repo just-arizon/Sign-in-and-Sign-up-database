@@ -164,10 +164,21 @@ div.text{
 .bg-google-btn{
     border-radius: 30px;
 }
+div.line{
+    display: flex;
+    align-items: center;
+}
+hr{
+    height: 1px;
+    background-color:  rgba(128, 128, 128, 0.3);
+    transform: rotate(180deg);
+    margin: 8px;
+}
 
 /* media queries */
 @media (max-width: 480px){
-    .font-logo{
+    .font-logo,
+    .map-logo{
         font-weight: 700;
         font-size: 1.125rem;
     }
