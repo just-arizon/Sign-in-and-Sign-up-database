@@ -1,4 +1,17 @@
-<!DOCTYPE html>
+<?php
+ 
+
+
+
+
+
+
+
+
+
+
+ echo '
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,12 +32,12 @@
                 <div class="logo-container d-flex
                 px-3">
                   <div><a href="#" class="font-logo mx-1 d-flex align-items-end">zikwalk</a></div>
-                  <span class="font-logo"><box-icon name='map' class='map-logo' color='#24A90A' ></box-icon></span>
+                  <span class="font-logo"><box-icon name="map" class="map-logo" color="#24A90A" ></box-icon></span>
                 </div>
                 <div class="" id="navmenu ">
                   <ul class="navbar-nav ms-auto mx-3">
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-light">Log In</a>
+                        <a href="#" class="nav-link text-light fw-bold">Log In</a>
                     </li>
                   </ul>
                 </div>
@@ -84,7 +97,7 @@
                   <div class="options-container">
                     <div class="text-center text-muted mb-3">Or</div>
                     <button type="submit" class="form-control bg-google-btn text-light mb-3"><span><iconify-icon icon="logos:google-icon"></iconify-icon></span><span class="text-muted m-2">Continue with Google</span></button>
-                    <p class="text-center text-muted">By continuing you agree to zikwalk's Terms and Condition.</p>
+                    <p class="text-center text-muted">By continuing you agree to zikwalk Terms and Condition.</p>
                   </div>
                </form>
             </div>
@@ -97,3 +110,7 @@
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>
+ 
+ 
+ '
+?>
