@@ -1,14 +1,24 @@
 <?php
- 
+  require'inc/connect.php';
 
-
-
-
-
-
-
-
-
+  if (isset($_POST['zikwalk database'])) {
+      if(!preg_match_all('/[a-z, ]/i',$_POST['fname'])){
+          echo'<div class = "bg-danger text-light p-2">
+          Fulname requires only alphabet!</div>';
+      }else if(!preg_match_all('/[a-z,0-9]/i',$_POST['user'])){
+          echo'<div class = "bg-danger text-light p-2">
+          Username requires only alphanumeric!</div>';
+      }else if($_POST['pass'] != $_POST['rpass']){
+          echo'<div class = "bg-danger text-light p-2">
+          Password mismatch!</div>';
+      }else{
+          $_SESSION['fname'] = mysqli_real_escape_string($ret,$_POST['fname']);
+          $_SESSION['uemail'] = mysqli_real_escape_string($ret,$_POST['uemail']);
+          $_SESSION['user'] = mysqli_real_escape_string($ret,$_POST['user']);
+          $_SESSION['pass'] = mysqli_real_escape_string($ret,$_POST['pass']);
+          echo'<script> window.location.href = "verify.php";</script>';
+      }
+  }
 
  echo '
  <!DOCTYPE html>
@@ -59,7 +69,7 @@
               </div>
             </div>
             <div class="col col-lg-4 p-lg-4 p-sm-2">
-               <form action="" class="bg-white p-5 pt-4 form-container">
+               <form action="" method="post"class="bg-white p-5 pt-4 form-container">
                 <div class="">
                     <label for="first-name" class="col-form-label text-dark">
                       Name
@@ -92,7 +102,7 @@
                     <input type="password" class="form-control" name="rpass" id="first-name" />
                   </div>
                   <div class="my-3">
-                    <button type="submit" class="form-control bg-my-btn text-light">Sign-Up</button>
+                    <button type="submit" class="form-control bg-my-btn text-light" name="zikwalk database">Sign-Up</button>
                   </div>
                   <div class="options-container">
                     <div class="text-center text-muted mb-3">Or</div>
